@@ -1,0 +1,45 @@
+oxidized,electrons,reduced,potential
+Li+(aq),1,Li(s),-3.04
+K+(aq),1,K(s),-2.92
+Ca2+(aq),2,Ca(s),-2.76
+Na+(aq),1,Na(s),-2.71
+Mg2+(aq),2,Mg(s),-2.38
+Al3+(aq),3,Al(s),-1.66
+2H2O(l),2,H2(g) + 2OH-(aq),-0.83
+Zn2+(aq),2,Zn(s),-0.76
+Cr3+(aq),3,Cr(s),-0.74
+Fe2+(aq),2,Fe(s),-0.41
+Cd2+(aq),2,Cd(s),-0.40
+Ni2+(aq),2,Ni(s),-0.23
+Sn2+(aq),2,Sn(s),-0.14
+Pb2+(aq),2,Pb(s),-0.13
+Fe3+(aq),3,Fe(s),-0.04
+2H+(aq),2,H2(g),0.00
+Sn4+(aq),2,Sn2+(aq),0.15
+Cu2+(aq),1,Cu+(aq),0.16
+ClO4-(aq) + H2O(l),2,ClO3-(aq) + 2OH-(aq),0.17
+AgCl(s),1,Ag(s) + Cl-(aq),0.22
+Cu2+(aq),2,Cu(s),0.34
+ClO3-(aq) + H2O(l),2,ClO2-(aq) + 2OH-(aq),0.35
+IO-(aq) + H2O(l),2,I-(aq) + 2OH-(aq),0.49
+Cu+(aq),1,Cu(s),0.52
+I2(s),2,2I-(aq),0.54
+ClO2-(aq) + H2O(l),2,ClO-(aq) + 2OH-(aq),0.59
+Fe3+(aq),1,Fe2+(aq),0.77
+Hg22+(aq),2,2Hg(l),0.80
+Ag+(aq),1,Ag(s),0.80
+Hg2+(aq),2,Hg(l),0.85
+ClO-(aq) + H2O(l),2,Cl-(aq) + 2OH-(aq),0.90
+2Hg2+(aq),2,Hg22+(aq),0.90
+NO3-(aq) + 4H+(aq),3,NO(g) + 2H2O(l),0.96
+Br2(l),2,2Br-(aq),1.07
+O2(g) +  4H+(aq),4,2H2O(l),1.23
+Cr2O72-(aq) + 14H+(aq),6,2Cr3+(aq) + 7H2O(l),1.33
+Cl2(g),2,2Cl-(aq),1.36
+Ce4+(aq),1,Ce3+(aq),1.44
+MnO4-(aq) + 8H+(aq),5,Mn2+(aq) + 4H2O(l),1.49
+H2O2(aq) + 2H+(aq),2,2H2O(l),1.78
+Co3+(aq),1,Co2+(aq),1.82
+S2O82-(aq),2,2SO42-(aq),2.01
+O3(g) +  2H+(aq),2,O2(g) + H2O(l),2.07
+F2(g),2,2F-(aq),2.87
