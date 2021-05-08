@@ -37,15 +37,15 @@ for s1, s2 in cells:
     lengths = [len(i[0]) + len(i[2]) for i in s1_candidates + s2_candidates]
     rxn_padding = max(lengths) + 14
 
-    def print_row(a, c, v):
-        print(a.ljust(rxn_padding) + c.ljust(rxn_padding) + str(v))
+    def print_row(a, c, v, av, cv):
+        print(a.ljust(rxn_padding), c.ljust(rxn_padding), v.ljust(14), av.ljust(14), cv.ljust(14), sep='')
 
     print(f'Cell with {s1}, {s2}')
-    print_row('anode', 'cathode', 'potential')
+    print_row('anode', 'cathode', 'cell pot.', 'anode pot.', 'cathode pot.')
     for a in s1_candidates:
         for b in s2_candidates:
             an, ct, v = cell_potential(a, b)
             ah = an[0] + ' + ' + str(an[1]) + 'e-' + ' -> ' + an[2]
             ch = ct[2] + ' -> '+ ct[0] + ' + ' + str(ct[1]) + 'e-'
-            print_row(ah, ch, str(round(v, voltage_decimals)))
+            print_row(ah, ch, str(round(v, voltage_decimals)), str(an[3]), str(ct[3]))
     print()
