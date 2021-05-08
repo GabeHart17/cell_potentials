@@ -4,7 +4,6 @@ import csv
 potentials_file = 'potentials_reformatted.csv'
 cells_file = 'cells.csv'
 voltage_decimals = 2
-rxn_padding = 40
 
 # read cell potentials from file
 with open(potentials_file, 'r') as f:
@@ -31,12 +30,16 @@ with open(cells_file, 'r') as f:
     cells = list(csv.reader(f))
 
 
-def print_row(a, c, v):
-    print(a.ljust(rxn_padding) + c.ljust(rxn_padding) + str(v))
 
 for s1, s2 in cells:
     s1_candidates = list(filter(lambda p: eq_species(p[2], s1) ,potentials))
     s2_candidates = list(filter(lambda p: eq_species(p[2], s2) ,potentials))
+    lengths = [len(i[0]) + len(i[2]) for i in s1_candidates + s2_candidates]
+    rxn_padding = max(lengths) + 14
+
+    def print_row(a, c, v):
+        print(a.ljust(rxn_padding) + c.ljust(rxn_padding) + str(v))
+
     print(f'Cell with {s1}, {s2}')
     print_row('anode', 'cathode', 'potential')
     for a in s1_candidates:
