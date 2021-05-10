@@ -1,8 +1,10 @@
 import csv
+import sys
 
 # parameters
 potentials_file = 'potentials_reformatted.csv'
 cells_file = 'cells.csv'
+if len(sys.argv) > 1: cells_file = sys.argv[1]
 voltage_decimals = 2
 
 # read cell potentials from file
