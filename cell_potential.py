@@ -24,8 +24,8 @@ def eq_species(a, b):
 # takes two half-reaction rows from potentials
 # chooses anode and cathode and calcuates cell potential
 def cell_potential(h1, h2):
-    cathode, anode = sorted([h1, h2], key=lambda x: x[-1])
-    return anode, cathode, anode[-1] - cathode[-1]
+    anode, cathode = sorted([h1, h2], key=lambda x: x[-1])
+    return anode, cathode, cathode[-1] - anode[-1]
 
 # cells.csv has rows of format electrode1,electrode2
 with open(cells_file, 'r') as f:
@@ -47,7 +47,7 @@ for s1, s2 in cells:
     for a in s1_candidates:
         for b in s2_candidates:
             an, ct, v = cell_potential(a, b)
-            ah = an[0] + ' + ' + str(an[1]) + 'e-' + ' -> ' + an[2]
-            ch = ct[2] + ' -> '+ ct[0] + ' + ' + str(ct[1]) + 'e-'
+            ah = an[2] + ' -> '+ an[0] + ' + ' + str(an[1]) + 'e-'
+            ch = ct[0] + ' + ' + str(ct[1]) + 'e-' + ' -> ' + ct[2]
             print_row(ah, ch, str(round(v, voltage_decimals)), str(an[3]), str(ct[3]))
     print()
